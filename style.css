@@ -1,0 +1,342 @@
+body {
+    background-color: #e1bdb4;
+    border: 0;
+    font-family: 'brix-slab', 'brix-slab-condensed', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------ navigationsbar ------- */
+
+header {
+    background-color: #2e2b7e;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1%;
+}
+
+.logo img {
+    height: auto;
+    margin-left: 70px;
+    position: absolute;
+    width: 300px;
+}
+
+.navigation {
+    display: inline-block;
+    margin-right: 15px;
+    text-align: right;
+}
+
+.navigation img {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.navigation img:hover {
+    opacity: 0.6;
+}
+
+.lillestr {
+    height: 20px;
+    width: auto;
+}
+
+.storstr {
+    height: 32px;
+    width: auto;
+}
+
+main {
+    margin: 0 2% 0 2%;
+}
+
+#menu {
+    margin-left: 90%;
+    margin-top: 20px;
+    position: absolute;
+    width: 50px;
+    height: auto;
+}
+
+/* ----- stemnings billede ------*/
+
+.stemnings_image {
+    width: 100%;
+    height: auto;
+}
+
+.text_over_image {
+    color: #f6e8c5;
+    position: relative;
+    font-size: 75px;
+    bottom: 180px;
+    left: 20px;
+    
+}
+/* ---- Tivoli Friheden citat ---- */
+.text_under_image {
+    color: #2e2b7e;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 30px 0 30px;
+}
+
+/*sæsonkort-boks*/
+ 
+#saesonkort {
+width: 150px;
+height: auto; 
+right: 0;
+bottom: 23%;
+position: fixed; 
+}
+
+
+/* ------ hovedafsnit ------*/
+
+.hovedafsnit {
+    padding-right: 155px;
+    padding-bottom: 100px;
+}
+
+/*------ Artist boxes-------*/
+
+.moned {
+    font-size: xx-large;
+    padding: 45px 0 10px 20px;
+    margin: 0;
+}
+
+.thumb-grid {
+    user-select: none;
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.flex-item {
+	flex: 1 0 auto
+}
+
+
+/* ----- Artist boxe for Maj måned ------*/ 
+
+.thumbnail-grid figure {
+	position: relative;
+	min-width: 300px;
+	height: 280px;
+	margin: 5px;
+	border-radius: 3px;
+	box-shadow: inset 0 -40px 0 0 rgba(46, 43, 126, 0.6);
+	transition: all .9s ease-in-out
+}
+
+.thumbnail-grid figure:hover {
+	box-shadow: inset 0 -280px 0 0 rgba(46, 43, 126, 0.6);
+}
+
+.thumbnail-grid figcaption {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	color: #b1c6fb;
+	text-shadow: 0 0 3px #1b1b38;
+	bottom: 10px;
+	transition: all .6s ease-in-out
+}
+
+
+.thumbnail-grid figure:hover figcaption {
+	bottom: 140px
+}
+
+.thumbnail-grid figure.i1 {
+	background: url(img/kesi.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.thumbnail-grid figure.i2 {
+	background: url(img/rasmus_seebach.jpg) no-repeat center;
+	background-size: cover;
+    box-shadow: inset 0 -40px 0 0 rgba(225, 189, 180, 0.6);
+}
+.thumbnail-grid figure.i2:hover {
+	box-shadow: inset 0 -280px 0 0 rgba(225, 189, 180, 0.6);
+}
+
+.thumbnail-grid figure.i3 {
+    background: url(img/birthe_kjaer.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* ----- Artist boxe for Juni måned ------*/ 
+
+
+.thumb-grid figure {
+	position: relative;
+	min-width: 300px;
+	height: 280px;
+	margin: 5px;
+	border-radius: 3px;
+	box-shadow: inset 0 -40px 0 0 rgba(46, 43, 126, 0.6);
+	transition: all .9s ease-in-out
+}
+.thumb-grid figure:hover {
+	box-shadow: inset 0 -280px 0 0 rgba(46, 43, 126, 0.6);
+}
+
+
+.thumb-grid figcaption {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	color: #b1c6fb;
+	text-shadow: 0 0 3px #1b1b38;
+	bottom: 10px;
+	transition: all .6s ease-in-out
+}
+
+
+.thumb-grid figure:hover figcaption {
+	bottom: 140px
+}
+
+.thumb-grid figure.i4 {
+    background: url(img/queen_machine.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.thumb-grid figure.i5 {
+    background: url(img/poul_krebs.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.thumb-grid figure.i6 {
+    background: url(img/christopher.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.thumb-grid figure.i7 {
+    background: url(img/seal.jpg) no-repeat center;
+    background-size: cover;
+    box-shadow: inset 0 -40px 0 0 rgba(225, 189, 180, 0.6);
+}
+.thumb-grid figure.i7:hover {
+	box-shadow: inset 0 -280px 0 0 rgba(225, 189, 180, 0.6);
+}
+.thumb-grid figure.i8 {
+    background: url(img/reklameboks.png) no-repeat center;
+    background-size: cover;
+    box-shadow: none;
+}
+.thumb-grid figure.i8:hover {
+	box-shadow: none;
+}
+
+.thumb-grid figure.i9 {
+    background: url(img/thomas_helmig.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* ----- Artist boxe for Juli måned ------*/ 
+
+
+.nailthumb-grid figure {
+	position: relative;
+	min-width: 300px;
+	height: 280px;
+	margin: 5px;
+	border-radius: 3px;
+	box-shadow: inset 0 -40px 0 0 rgba(46, 43, 126, 0.6);
+	transition: all .9s ease-in-out
+}
+
+.nailthumb-grid figure:hover {
+	box-shadow: inset 0 -280px 0 0 rgba(46, 43, 126, 0.6);
+}
+
+
+.nailthumb-grid figcaption {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	color: #b1c6fb;
+	text-shadow: 0 0 3px #1b1b38;
+	bottom: 10px;
+	transition: all .6s ease-in-out
+}
+
+
+.nailthumb-grid figure:hover figcaption {
+	bottom: 140px
+}
+
+.nailthumb-grid figure.i10 {
+    background: url(img/burhan_g.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.nailthumb-grid figure.i11 {
+    background: url(img/annika_aakjaer.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.nailthumb-grid figure.i12 {
+    background: url(img/mo.jpg) no-repeat center;
+    background-size: cover;
+    box-shadow: inset 0 -40px 0 0 rgba(225, 189, 180, 0.6);
+}
+.nailthumb-grid figure.i12:hover {
+	box-shadow: inset 0 -280px 0 0 rgba(225, 189, 180, 0.6);
+}
+
+/* ---- style af moned text og overskrift ---- */
+
+.overskrift {
+    text-align: center;
+    color: #2e2b7e;
+    font-size: 45px;
+}
+
+.moned {
+    color: #2e2b7e;
+}
+
+/*-------- Footer ----------*/
+
+.footer {
+    background-color: #2e2b7e;
+    color: white;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.some_image {
+    width: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+#footer_left
+{text-align: left;}
+
+#column
+{text-align: center;}
+
+#footer_right
+{text-align: right;}
+
+/* ---- css stopper ---- */
